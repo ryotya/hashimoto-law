@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Kosugi&display=swap');
+
+* {
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Kosugi', sans-serif;
+}
+
+.default_color {
+    color: #B49E71;
+}
+
+.hover_default_color {
+    color: #e4c78e;
+}
+
+.default_bg_color {
+    background-color: #B49E71;
+}
+
+.default_border_color {
+    border-bottom: 1mm solid #B49E71;
+}
+
+.default_bg_color:hover {
+    background-color: #ddc89f;
+}
+
+.top_background{
+    background-image: url(/img/demo.jpg);
+    background-size: cover;
+}
+
+.text-shadow {
+    text-shadow: 2px 4px 6px #000000;
+}
+
+.secound_bg_color {
+    background-color: #B49E71;
+}
