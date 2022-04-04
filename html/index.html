@@ -78,7 +78,7 @@
 
   <section1>
     <div class="h-screen top_background">
-      <div class="pt-72 text-center">
+      <div class="pt-72 text-center scrollanime downup">
         <h1 class="text-5xl text-white tracking-wide leading-loose text-shadow">法律問題でお悩みの方に<br>
           <span class="text-5xl">丁寧にご対応させていただきます。</span>
         </h1>
@@ -183,7 +183,7 @@
           <h1 class="text-4xl text-center mt-16 pb-2 inline-block default_border_color">取扱業務</h1>
         </div>
         <div class="grid grid-cols-3 gap-24 mt-16">
-          <div class="flex items-center">
+          <div class="flex items-center scrollanime downup">
             <div class="mx-auto">
               <div class="h-80 w-64 bg-gray-100">
                 <svg class="h-8 w-8 text-gray-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
@@ -199,7 +199,7 @@
               </div>
             </div>
           </div>
-          <div class="flex items-center">
+          <div class="flex items-center scrollanime downup">
             <div class="mx-auto">
               <div class="h-80 w-64 bg-gray-100">
                 <svg class="h-8 w-8 text-gray-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
@@ -215,7 +215,7 @@
               </div>
             </div>
           </div>
-          <div class="flex items-center">
+          <div class="flex items-center scrollanime downup">
             <div class="mx-auto">
               <div class="h-80 w-64 bg-gray-100">
                 <svg class="h-8 w-8 text-gray-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
@@ -231,7 +231,7 @@
               </div>
             </div>
           </div>
-          <div class="flex items-center">
+          <div class="flex items-center scrollanime downup">
             <div class="mx-auto">
               <div class="h-80 w-64 bg-gray-100">
                 <svg class="h-8 w-8 text-gray-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
@@ -247,7 +247,7 @@
               </div>
             </div>
           </div>
-          <div class="flex items-center">
+          <div class="flex items-center scrollanime downup">
             <div class="mx-auto">
               <div class="h-80 w-64 bg-gray-100">
                 <svg class="h-8 w-8 text-gray-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
@@ -263,7 +263,7 @@
               </div>
             </div>
           </div>
-          <div class="flex items-center">
+          <div class="flex items-center scrollanime downup">
             <div class="mx-auto">
               <div class="h-80 w-64 bg-gray-100">
                 <svg class="h-8 w-8 text-gray-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
@@ -376,13 +376,12 @@
 
   $(function () {
     $(window).scroll(function () {
-      const windowHeight = $(window).height();
-      const scroll = $(window).scrollTop();
-
-      $('.element').each(function () {
+      const wHeight = $(window).height();
+      const scrollAmount = $(window).scrollTop();
+      $('.scrollanime').each(function () {
         const targetPosition = $(this).offset().top;
-        if (scroll > targetPosition - windowHeight + 50) {
-          $(this).addClass("is-fadein");
+        if (scrollAmount > targetPosition - wHeight + 60) {
+          $(this).addClass("fadeInDown");
         }
       });
     });
