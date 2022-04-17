@@ -74,3 +74,69 @@
 .sect02{overflow: hidden;} /*横スクロールバーを隠す*/
 .slide-right {transform: translateX(200px);}
 .slide-left {transform: translateX(-200px);}
+
+.pulse:hover,
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+// Stack multiple shadows, one from the left, the other from the right
+.close:hover,
+.close:focus {
+  box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+}
+
+.main_pink {
+    background-color: #ff7f7f;
+}
+
+.main_pink:hover {
+    background-color: #ff9e9e;
+}
+
+.main_purple {
+    background-color: #bf7fff;
+}
+
+.main_purple:hover {
+    background-color: #ce9eff;
+}
+
+.main_blue {
+    background-color: #7fbfff;
+}
+
+.main_blue:hover {
+    background-color: #9eceff;
+}
+
+.main_yellow {
+    background-color: #ffd700;
+}
+
+.main_yellow:hover {
+    background-color: #ffff9e;
+}
+
+.main_green {
+    background-color: #7fffbf;
+}
+
+.main_green:hover {
+    background-color: #bcffdd;
+}
+
+.main_orange {
+    background-color: #ffbf7f;
+}
+
+.main_orange:hover {
+    background-color: #ffd3a8;
+}
