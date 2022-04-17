@@ -38,6 +38,17 @@
     background-color: #B49E71;
 }
 
+.box {
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
 /*1.フェードインアニメーションの指定*/
 .scrollanime {opacity: 0;} /*一瞬表示されるのを防ぐ*/
 .fadeInDown {

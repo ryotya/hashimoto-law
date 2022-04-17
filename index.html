@@ -77,20 +77,39 @@
   </mobilenav>
 
   <section1>
-    <div class="h-screen top_background grid content-between">
+    <div class="h-screen box grid content-between">
       <div class="hidden lg:block pt-72 text-center">
-        <h1 class="text-6xl text-white tracking-wide leading-loose text-shadow">
+        <h1 class="text-6xl text-white tracking-wide leading-loose truncate">
           あなたの「不安」を「安心」に
         </h1>
+        <p class="text-white">私たちは法律サービスを通じて"一人ひとり"の喜びを実現します。</p>
       </div>
-      <div class="bg-white opacity-30 w-screen h-52 transparent">
-        <div class="grid grid-cols-6">
-          <div class="bg-black"></div>
-          <div class="bg-black"></div>
-          <div class="bg-black"></div>
-          <div class="bg-black"></div>
-          <div class="bg-black"></div>
-          <div class="bg-black"></div>
+      <div class="bg-white w-screen h-52 transparent bg-opacity-75">
+        <div class="grid grid-cols-8 h-full">
+          <div class="col-start-2 h-full flex justify-center items-center border" style="flex-direction: column;">
+            <div class="text-black bg-transparent">遺言・相続</div>
+            <div class="h-28 w-28 mt-2 rounded-full bg-pink-600"></div>
+          </div>
+          <div class="h-full flex justify-center items-center border" style="flex-direction: column;">
+            <div class="bg-transparent text-black">成年後見</div>
+            <div class="h-28 w-28 mt-2 rounded-full bg-blue-600"></div>
+          </div>
+          <div class="h-full flex justify-center items-center border" style="flex-direction: column;">
+            <div class="bg-transparent text-black">交通事故</div>
+            <div class="h-28 w-28 mt-2 rounded-full bg-green-400"></div>
+          </div>
+          <div class="h-full flex justify-center items-center border" style="flex-direction: column;">
+            <div class="bg-transparent text-black">離婚</div>
+            <div class="h-28 w-28 mt-2 rounded-full bg-green-600"></div>
+          </div>
+          <div class="h-full flex justify-center items-center border" style="flex-direction: column;">
+            <div class="bg-transparent text-black">債務整理</div>
+            <div class="h-28 w-28 mt-2 rounded-full bg-yellow-300"></div>
+          </div>
+          <div class="h-full flex justify-center items-center border" style="flex-direction: column;">
+            <div class="bg-transparent text-black">法テラス</div>
+            <div class="h-28 w-28 mt-2 rounded-full bg-yellow-600"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -205,7 +224,7 @@
                   <line x1="13" y1="12" x2="15" y2="12" />
                   <line x1="9" y1="16" x2="9.01" y2="16" />
                   <line x1="13" y1="16" x2="15" y2="16" /></svg>
-                <p class="mt-4 pl-8">ご挨拶の内容</p>
+                <p class="mt-4 pl-8">取扱業務の内容</p>
               </div>
             </div>
           </div>
@@ -221,7 +240,7 @@
                   <line x1="13" y1="12" x2="15" y2="12" />
                   <line x1="9" y1="16" x2="9.01" y2="16" />
                   <line x1="13" y1="16" x2="15" y2="16" /></svg>
-                <p class="mt-4 pl-8">ご挨拶の内容</p>
+                <p class="mt-4 pl-8">取扱業務の内容</p>
               </div>
             </div>
           </div>
@@ -237,7 +256,7 @@
                   <line x1="13" y1="12" x2="15" y2="12" />
                   <line x1="9" y1="16" x2="9.01" y2="16" />
                   <line x1="13" y1="16" x2="15" y2="16" /></svg>
-                <p class="mt-4 pl-8">ご挨拶の内容</p>
+                <p class="mt-4 pl-8">取扱業務の内容</p>
               </div>
             </div>
           </div>
@@ -253,7 +272,7 @@
                   <line x1="13" y1="12" x2="15" y2="12" />
                   <line x1="9" y1="16" x2="9.01" y2="16" />
                   <line x1="13" y1="16" x2="15" y2="16" /></svg>
-                <p class="mt-4 pl-8">ご挨拶の内容</p>
+                <p class="mt-4 pl-8">取扱業務の内容</p>
               </div>
             </div>
           </div>
@@ -269,7 +288,7 @@
                   <line x1="13" y1="12" x2="15" y2="12" />
                   <line x1="9" y1="16" x2="9.01" y2="16" />
                   <line x1="13" y1="16" x2="15" y2="16" /></svg>
-                <p class="mt-4 pl-8">ご挨拶の内容</p>
+                <p class="mt-4 pl-8">取扱業務の内容</p>
               </div>
             </div>
           </div>
@@ -285,7 +304,7 @@
                   <line x1="13" y1="12" x2="15" y2="12" />
                   <line x1="9" y1="16" x2="9.01" y2="16" />
                   <line x1="13" y1="16" x2="15" y2="16" /></svg>
-                <p class="mt-4 pl-8">ご挨拶の内容</p>
+                <p class="mt-4 pl-8">取扱業務の内容</p>
               </div>
             </div>
           </div>
@@ -438,6 +457,7 @@
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="/js/jquery.bgswitcher.js"></script>
 
 <script>
   $(".openbtn1").click(function () {
@@ -461,6 +481,18 @@
           $(this).addClass("fadeInDown");
         }
       });
+    });
+  });
+
+  jQuery(function ($) {
+    $('.box').bgSwitcher({
+      images: ['/img/demo.jpg', '/img/shizen.jpeg'],
+      interval: 5000,
+      loop: true,
+      shuffle: true,
+      effect: "drop",
+      duration: 2000,
+      easing: "swing"
     });
   });
 </script>
