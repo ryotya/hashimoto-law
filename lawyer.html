@@ -83,9 +83,31 @@
 
     <section1>
         <div class="default_bg_color">
-            <h1 class="text-4xl text-white text-center pt-32 pb-16">事務所紹介</h1>
+            <h1 class="text-4xl text-white text-center pt-32 pb-16">弁護士相談</h1>
         </div>
     </section1>
+
+    <pan>
+        <ol class="flex p-4" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <!-- 1つめ -->
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="/index.html">
+                    <span itemprop="name">ホーム</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>
+
+            <p class="px-1">＞</p>
+
+            <!-- 2つめ -->
+            <li class="default_color" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="/lawyer.html">
+                    <span itemprop="name">弁護士紹介</span>
+                </a>
+                <meta itemprop="position" content="2" />
+            </li>
+        </ol>
+    </pan>
 
     <section2>
         <div class="flex items-center">
@@ -94,15 +116,58 @@
                     <div class="flex items-center">
                         <div class="grid grid-cols-1 mx-auto space-y-24">
                             <div class="px-24">
-                                <h3 class="text-xl default_bg_color text-white inline-block px-4">基本は、人助け</h3>
-                                <p class="mt-4 pl-8 text-lg leading-loose">
-                                    一般の方にとって、弁護士事務所の敷居は、まだまだ高いようです。
-                                    なぜでしょうか。
-                                    それは、ひとつには、弁護士が難しい法律を扱うプロであることにあると思います。料理店であれ、衣料品店であれ、良質なものを扱えば扱うほど、値段は上がり、敷居は高くなるものです。
-                                    もちろん私たちは、プロフェッショナルであるため、日々研鑽を重ねています。
-                                    しかし、多くの弁護士にとって、事務所の看板を掲げる理由は、単純です。
-                                    困っている人の手助けをしたい。
+                                <h3 class="text-xl default_bg_color text-white inline-block px-4">プロフィール</h3>
+                                <p class="mt-4 pl-8 text-2xl leading-loose">
+                                    橋本　愼一 (はしもとしんいち)
                                 </p>
+                                <div class="">
+                                    <div class="sm:mt-4 overflow-hidden sm:rounded-lg">
+                                        <div class="px-4 py-5 sm:p-0 mx-auto">
+                                            <dl>
+                                                <div
+                                                    class="sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6 sm:py-5 sm:border-t">
+                                                    <dt class="text-base font-medium text-gray-900 leading-5">
+                                                        生年月日
+                                                    </dt>
+                                                    <dd
+                                                        class="mt-1 text-base text-gray-900 leading-5 sm:mt-0 sm:col-span-2">
+                                                        1900年1月1日
+                                                    </dd>
+                                                </div>
+                                                <div
+                                                    class="mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
+                                                    <dt class="text-base font-medium text-gray-900 leading-5">
+                                                        出身
+                                                    </dt>
+                                                    <dd
+                                                        class="mt-1 text-base text-gray-900 leading-5 sm:mt-0 sm:col-span-2">
+                                                        父親が転勤族でしたので、3年おきに引っ越しをしていて、最後は伊勢原市でした。
+                                                    </dd>
+                                                </div>
+                                                <div
+                                                    class="mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-gray-200 sm:px-6 sm:py-5">
+                                                    <dt class="text-base font-medium text-gray-900 leading-5">
+                                                        好きな食べ物
+                                                    </dt>
+                                                    <dd
+                                                        class="mt-1 text-base text-gray-900 leading-5 sm:mt-0 sm:col-span-2">
+                                                        お蕎麦（特に十割蕎麦）、甘いもの
+                                                    </dd>
+                                                </div>
+                                                <div
+                                                    class="mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t sm:border-b sm:border-gray-200 sm:px-6 sm:py-5">
+                                                    <dt class="text-base font-medium text-gray-900 leading-5">
+                                                        休日の過ごし方
+                                                    </dt>
+                                                    <dd
+                                                        class="mt-1 text-base text-gray-900 leading-5 sm:mt-0 sm:col-span-2">
+                                                        ・パソコンをいじること<br>・youtubeで旅の動画を観ること（最近はスーツ交通さんをよく観ています）<br>・神保町古本巡り<br>・神社に行くこと<br>・野球は西武ライオンズのファンです<br>・映画（007など）
+                                                    </dd>
+                                                </div>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -113,6 +178,112 @@
             </div>
         </div>
     </section2>
+
+    <section3>
+        <div class="flex justify-center my-16 scrollanime downup">
+            <div class="">
+                <div class="">
+                    <h3 class="text-xl default_bg_color text-white inline-block px-4">略歴</h3>
+                    <div class="flex py-4 border-b">
+                        <p class="pr-4">2001年10月</p>
+                        <p>弁護士登録<br>都内法律事務所にて債務整理、不動産、交通事故、離婚、遺産相続案内などの経験を積む</p>
+                    </div>
+                    <div class="flex py-4 border-b">
+                        <p class="pr-4">2005年10月</p>
+                        <p>神奈川県相模原市に橋本総合法律事務所を開設</p>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <h3 class="text-xl default_bg_color text-white inline-block px-4">経歴</h3>
+                    <div class="flex pt-4 pb-2">
+                        <p class="pr-4">【過去歴任した委員等】</p>
+                    </div>
+                    <div class="flex">
+                        <p class="pr-2">・</p>
+                        <p>神奈川県弁護士会相模原支部支部長（平成25年4月〜平成27年3月）</p>
+                    </div>
+                    <div class="flex">
+                        <p class="pr-2">・</p>
+                        <p>神奈川県弁護士会高齢者・障害者の権利に関する委員会委員</p>
+                    </div>
+                    <div class="flex">
+                        <p class="pr-2">・</p>
+                        <p>日弁連交通事故相談センター神奈川県支部委員会委員</p>
+                    </div>
+                    <div class="flex">
+                        <p class="pr-2">・</p>
+                        <p>神奈川県弁護士会裁判官評価検討・人材育成支援等推進委員会委員</p>
+                    </div>
+                    <div class="flex">
+                        <p class="pr-2">・</p>
+                        <p>神奈川県弁護士会支部連絡委員会委員　など　他にも数多くの委員を経験しています。</p>
+                    </div>
+                    <div class="flex">
+                        <p class="pr-2">・</p>
+                        <p>裁判所から数多くの管財人、個人再生委員に選任されています。</p>
+                    </div>
+                    <div class="flex">
+                        <p class="pr-2">・</p>
+                        <p>成年後見人も数多く携わっています。</p>
+                    </div>
+                    <div class="flex pt-4 pb-2">
+                        <p class="pr-4">【現在】</p>
+                    </div>
+                    <div class="flex">
+                        <p class="pr-2">・</p>
+                        <p>横浜地方裁判所相模原支部　調停委員（平成31年～現在）</p>
+                    </div>
+                    <div class="flex">
+                        <p class="pr-2">・</p>
+                        <p>相模原市役所　監査委員（平成31年～現在）</p>
+                    </div>
+                    <div class="flex">
+                        <p class="pr-2">・</p>
+                        <p>神奈川県弁護士会　地域司法委員会委員</p>
+                    </div>
+                    <div class="flex pt-4 pb-2">
+                        <p class="pr-4">【事務局】</p>
+                    </div>
+                    <div class="flex">
+                        <p>御来所された方全てに明るく丁寧な対応を心掛けます。ご不明な点がございましたらお気軽にお問い合わせください。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section3>
+
+    <section7>
+        <div class="flex items-center my-32">
+            <div class="grid grid-cols-1 mx-auto scrollanime downup">
+                <div class="main_border_color py-16 px-48">
+                    <div class="mx-auto">
+                        <h1 class="text-4xl text-center mb-8 pb-2">お問い合わせ</h1>
+                    </div>
+                    <div class="grid grid-cols-2 gap-24">
+                        <div class="flex items-center justify-center">
+                            <div class="default_bg_color p-4 rounded-full">
+                                <svg class="h-16 w-16 pr-2 inline-block text-white" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-5xl inline-block pl-2">042-768-8351</h3>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="grid grid-cols-1 mx-auto space-y-8">
+                                <h2 class="text-center text-2xl">受付時間：平日9:00〜19:00</h2>
+                                <h2 class="text-center text-2xl">定休日：土曜日・日曜日</h2>
+                                <a href="contact.html"
+                                    class="default_bg_color text-white hover:bg-gray-200 duration-300 rounded-full text-center py-4 px-8">メールでお問い合わせはこちら</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section7>
 
     <footer class="secound_bg_color">
         <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
