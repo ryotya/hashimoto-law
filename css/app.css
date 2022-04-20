@@ -60,6 +60,15 @@
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
+
+.scrollanime_top {opacity: 0;} /*一瞬表示されるのを防ぐ*/
+.fadeInDown_top {
+    animation-name: fadeInDown;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.downup_top {transform: translateY(100px);}
+
 @keyframes fadeInDown {
     0% {
         opacity: 0;
