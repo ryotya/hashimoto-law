@@ -6,7 +6,7 @@
     <link rel="icon" type="img/jpg" href="/img/hashimoto_logo.png" />
 </head>
 
-<body>
+<body style="display: none;" id="contents">
     <nav class="bg-white shadow lg:fixed w-screen z-40">
         <div class="mx-auto">
             <div class="flex justify-between h-32 lg:h-20 pl-8">
@@ -357,6 +357,14 @@
 </body>
 
 </html>
+<script>
+    $(function () {
+        $('#contents').hide();
+        $(window).on('load', function () {
+            $('#contents').fadeIn(1000);
+        });
+    });
+</script>
 <link rel="stylesheet" href="/css/app.css">
 <link rel="stylesheet" href="/css/nav.css">
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
