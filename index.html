@@ -5,7 +5,6 @@
   <meta charset=”utf-8”>
   <meta name=”keywords” content=”弁護士,相続,遺言,成年後見,離婚,債務整理,相模原市,”>
   <meta name=”description” content=”相模原市の橋本総合法律事務所です。遺言書作成・相続、成年後見、離婚、債務整理など、生活にかかわる法律の相談はお任せください。”>
-  <meta name="viewport" content="width=device-width">
   <meta property="og:title" content="橋本総合法律事務所｜神奈川県相模原市" />
   <meta property="og:description" content="相模原市の橋本総合法律事務所です。遺言書作成・相続、成年後見、離婚、債務整理など、生活にかかわる法律の相談はお任せください。" />
   <meta property="og:type" content="company" />
@@ -470,6 +469,16 @@
                       土曜・日曜・祝日
                     </dd>
                   </div>
+                  <div
+                    class="mt-8 sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:border-t  sm:border-gray-200 sm:px-6 sm:py-5">
+                    <dt class="text-base font-medium text-gray-900 leading-5">
+                      交通案内
+                    </dt>
+                    <a href="/access"
+                      class="mt-1 text-base text-blue-600 hover:text-blue-300 duration-300 leading-5 sm:mt-0 sm:col-span-2">
+                      当事務所までを写真付きでご案内→
+                    </a>
+                  </div>
                 </dl>
               </div>
             </div>
@@ -566,8 +575,8 @@
 
   $(function () {
     $("mobilenav").hide();
-    $(".openbtn1").click(function () {
-      $("mobilenav").toggle(300);
+    $(".openbtn1").click(function () { //メニューボタンをクリックしたとき
+      $("mobilenav").toggle(300); //0.3秒で表示したり非表示にしたりする
     });
   });
 
