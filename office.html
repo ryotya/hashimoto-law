@@ -318,14 +318,6 @@
 </body>
 
 </html>
-<script>
-    $(function () {
-        $('#contents').hide();
-        $(window).on('load', function () {
-            $('#contents').fadeIn(500);
-        });
-    });
-</script>
 <link rel="stylesheet" href="/css/app.css">
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
@@ -333,6 +325,13 @@
 <script src="/js/main.js"></script>
 
 <script>
+    $(function () {
+        $('#contents').hide();
+        $(window).on('load', function () {
+            $('#contents').fadeIn(1000);
+        });
+    });
+
     $(".openbtn1").click(function () {
         $(this).toggleClass('active');
     });
