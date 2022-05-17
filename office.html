@@ -17,7 +17,7 @@
     <link rel="icon" type="img/jpg" href="/img/hashimoto_logo.png" />
 </head>
 
-<body style="display: none;" id="contents">
+<body id="contents">
     <nav class="bg-white shadow lg:fixed w-screen z-40">
         <div class="mx-auto">
             <div class="flex justify-between h-32 lg:h-20 pl-8">
@@ -316,6 +316,9 @@
         </div>
     </footer>
 </body>
+<script>
+    $('#contents').hide().fadeIn(2000);
+</script>
 
 </html>
 <link rel="stylesheet" href="/css/app.css">
@@ -325,15 +328,6 @@
 <script src="/js/main.js"></script>
 
 <script>
-    // $(function () {
-    //     $('#contents').hide();
-    //     $(window).on('load', function () {
-    //         $('#contents').fadeIn(1000);
-    //     });
-    // });
-    $('#contents').fadeIn(1500);
-
-
     $(".openbtn1").click(function () {
         $(this).toggleClass('active');
     });
