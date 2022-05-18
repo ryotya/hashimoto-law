@@ -472,12 +472,7 @@
 
 </html>
 <script>
-    // $('body').hide().fadeIn(2000);
-    $(function () {
-        $(window).on('load', function () {
-            $('body').fadeIn(1000);
-        });
-    });
+
 </script>
 <link rel="stylesheet" href="/css/app.css">
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
@@ -507,5 +502,9 @@
                 }
             });
         });
+    });
+
+    $(window).on('load', function () {
+        $('body').fadeIn(1000);
     });
 </script>
