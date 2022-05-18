@@ -130,19 +130,20 @@
         <div class="bg-white overflow-hidden sm:px-6 px-8 pt-4 pb-24">
             <div class="relative max-w-xl mx-auto">
                 <div class="mt-12">
-                    <form action="#" method="POST" class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                    <form name="contact" action="/thanks" method="POST" data-netlify="true"
+                        class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                         <div class="sm:col-span-2">
                             <label for="name" class="block text-2xl lg:text-base font-medium text-gray-700">お名前<span
                                     class="ml-2 bg-red-400 text-white rounded-sm text-xl lg:text-sm">必須</span></label>
                             <div class="mt-1">
-                                <input type="text" name="name" id="name" autocomplete="organization"
+                                <input type="text" name="name" id="name"
                                     class="py-5 lg:py-3 px-4 block w-full focus:ring-gray-500 focus:border-gray-500 border border-gray-300 rounded-sm">
                             </div>
                         </div>
                         <div class="sm:col-span-2">
                             <label for="name" class="block text-2xl lg:text-base font-medium text-gray-700">会社名</label>
                             <div class="mt-1">
-                                <input type="text" name="company" id="company" autocomplete="organization"
+                                <input type="text" name="company" id="company"
                                     class="py-5 lg:py-3 px-4 block w-full focus:ring-gray-500 focus:border-gray-500 border border-gray-300 rounded-sm">
                             </div>
                         </div>
@@ -151,7 +152,7 @@
                                 class="block text-2xl lg:text-base font-medium text-gray-700">メールアドレス<span
                                     class="ml-2 bg-red-400 text-white rounded-sm text-xl lg:text-sm">必須</span></label>
                             <div class="mt-1">
-                                <input id="email" name="email" type="email" autocomplete="email"
+                                <input id="email" name="email" type="email"
                                     class="py-5 lg:py-3 px-4 block w-full focus:ring-gray-500 focus:border-gray-500 border border-gray-300 rounded-sm">
                             </div>
                         </div>
@@ -160,7 +161,7 @@
                                 class="block text-2xl lg:text-base font-medium text-gray-700">電話番号<span
                                     class="ml-2 bg-red-400 text-white rounded-sm text-xl lg:text-sm">必須</span></label>
                             <div class="mt-1 relative rounded-md shadow-sm">
-                                <input type="text" name="phone-number" id="phone-number" autocomplete="tel"
+                                <input type="text" name="phone-number" id="phone-number"
                                     class="py-5 lg:py-3 px-4 block w-full focus:ring-gray-500 focus:border-gray-500 border border-gray-300 rounded-sm">
                             </div>
                         </div>
@@ -171,7 +172,7 @@
                             <div class="mt-1 relative rounded-md shadow-sm">
                                 <!-- <input type="text" name="phone-number" id="phone-number" autocomplete="tel"
                                     class="py-3 px-4 block w-full focus:ring-gray-500 focus:border-gray-500 border border-gray-300 rounded-sm"> -->
-                                <select name="contact-items" id="contact-items"
+                                <select name="schedule[]" id="schedule"
                                     class="py-5 lg:py-3 px-4 block w-full focus:ring-gray-500 focus:border-gray-500 border border-gray-300 rounded-sm text-2xl lg:text-base">
                                     <option class="text-2xl lg:text-base">面談のご予約</option>
                                     <option class="text-2xl lg:text-base">面談のご予約</option>
