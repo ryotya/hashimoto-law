@@ -1,218 +1,233 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Kiwi+Maru&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&family=Shippori+Mincho&display=swap");
 
 * {
-    font-family: 'Fredoka', sans-serif;
-    font-family: 'Kiwi Maru', serif;
+  font-family: "Fredoka", sans-serif;
+  font-family: "Shippori Mincho", serif;
 }
 
 .default_color {
-    color: #B49E71;
+  color: #b49e71;
 }
 
 .hover_default_color {
-    color: #e4c78e;
+  color: #e4c78e;
 }
 
 .default_bg_color {
-    background-color: #B49E71;
+  background-color: #b49e71;
 }
 
 .default_border_color {
-    border-bottom: 1mm solid #B49E71;
+  border-bottom: 1mm solid #b49e71;
 }
 
 .main_border_color {
-    border: 1mm solid #B49E71;
+  border: 1mm solid #b49e71;
 }
 
 .default_bg_color:hover {
-    background-color: #ddc89f;
+  background-color: #ddc89f;
 }
 
-.top_background{
-    background-image: url(/img/shizen.jpeg);
-    background-size: cover;
+.top_background {
+  background-image: url(/img/shizen.jpeg);
+  background-size: cover;
 }
 
 .text-shadow {
-    text-shadow: 2px 4px 6px #000000;
+  text-shadow: 2px 4px 6px #000000;
 }
 
 .secound_bg_color {
-    background-color: #B49E71;
+  background-color: #b49e71;
 }
 
 .box {
-    width: 100vw;
-    height: 100vh;
-    background-position: center center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 /*1.フェードインアニメーションの指定*/
-.scrollanime {opacity: 0;} /*一瞬表示されるのを防ぐ*/
+.scrollanime {
+  opacity: 0;
+} /*一瞬表示されるのを防ぐ*/
 .fadeInDown {
-    animation-name: fadeInDown;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
+  animation-name: fadeInDown;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
-.scrollanime_top {opacity: 0;} /*一瞬表示されるのを防ぐ*/
+.scrollanime_top {
+  opacity: 0;
+} /*一瞬表示されるのを防ぐ*/
 .fadeInDown_top {
-    animation-name: fadeInDown;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
+  animation-name: fadeInDown;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
-.downup_top {transform: translateY(100px);}
+.downup_top {
+  transform: translateY(100px);
+}
 
 @keyframes fadeInDown {
-    0% {
-        opacity: 0;
-    }
-    100% {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
     transform: translate(0);
-    }
+  }
 }
 
 /*2.上下の動きを指定*/
-.updown {transform: translateY(-100px);}
-.downup {transform: translateY(100px);}
+.updown {
+  transform: translateY(-100px);
+}
+.downup {
+  transform: translateY(100px);
+}
 
 /*3.左右の動きを指定*/
-.sect02{overflow: hidden;} /*横スクロールバーを隠す*/
-.slide-right {transform: translateX(200px);}
-.slide-left {transform: translateX(-200px);}
+.sect02 {
+  overflow: hidden;
+} /*横スクロールバーを隠す*/
+.slide-right {
+  transform: translateX(200px);
+}
+.slide-left {
+  transform: translateX(-200px);
+}
 
 .pulse:hover,
 .pulse:focus {
-    animation: pulse 1s;
-    box-shadow: 0 0 0 2em transparent;
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
 }
 
 @keyframes pulse {
-    0% {
+  0% {
     box-shadow: 0 0 0 0 var(--hover);
-    }
+  }
 }
-
 
 .close:hover,
 .close:focus {
-    box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+  box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
 }
 
 .main_pink {
-    background-color: #ff7f7f;
+  background-color: #ff7f7f;
 }
 
 .main_pink:hover {
-    background-color: #ff9e9e;
+  background-color: #ff9e9e;
 }
 
 .main_purple {
-    background-color: #bf7fff;
+  background-color: #bf7fff;
 }
 
 .main_purple:hover {
-    background-color: #d0a2ff;
+  background-color: #d0a2ff;
 }
 
 .main_blue {
-    background-color: #7fbfff;
+  background-color: #7fbfff;
 }
 
 .main_blue:hover {
-    background-color: #9eceff;
+  background-color: #9eceff;
 }
 
 .main_yellow {
-    background-color: #fdd35c;
+  background-color: #fdd35c;
 }
 
 .main_yellow:hover {
-    background-color: #fee49b;
+  background-color: #fee49b;
 }
 
 .main_green {
-    background-color: #7fffbf;
+  background-color: #7fffbf;
 }
 
 .main_green:hover {
-    background-color: #bcffdd;
+  background-color: #bcffdd;
 }
 
 .main_orange {
-    background-color: #ffbf7f;
+  background-color: #ffbf7f;
 }
 
 .main_orange:hover {
-    background-color: #ffd3a8;
+  background-color: #ffd3a8;
 }
 
 /*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
 .openbtn1 {
-    position: relative; /*ボタン内側の基点となるためrelativeを指定*/
-    cursor: pointer;
-    width: 70px;
-    height: 70px;
-    border-radius: 5px;
+  position: relative; /*ボタン内側の基点となるためrelativeを指定*/
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
 }
 
 /*ボタン内側*/
 .openbtn1 span {
-    display: inline-block;
-    transition: all 0.4s; /*アニメーションの設定*/
-    position: absolute;
-    left: 19px;
-    height: 3px;
-    border-radius: 2px;
-    background: rgb(0, 0, 0);
-    width: 45%;
+  display: inline-block;
+  transition: all 0.4s; /*アニメーションの設定*/
+  position: absolute;
+  left: 19px;
+  height: 3px;
+  border-radius: 2px;
+  background: rgb(0, 0, 0);
+  width: 45%;
 }
 
 .openbtn1 span:nth-of-type(1) {
-    top: 24px;
+  top: 24px;
 }
 
 .openbtn1 span:nth-of-type(2) {
-    top: 32px;
+  top: 32px;
 }
 
 .openbtn1 span:nth-of-type(3) {
-    top: 40px;
+  top: 40px;
 }
 
 /*activeクラスが付与されると線が回転して×に*/
 
 .openbtn1.active span:nth-of-type(1) {
-    top: 24px;
-    left: 24px;
-    transform: translateY(6px) rotate(-45deg);
-    width: 40%;
+  top: 24px;
+  left: 24px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 40%;
 }
 
 .openbtn1.active span:nth-of-type(2) {
-    opacity: 0; /*真ん中の線は透過*/
+  opacity: 0; /*真ん中の線は透過*/
 }
 
 .openbtn1.active span:nth-of-type(3) {
-    top: 36px;
-    left: 24px;
-    transform: translateY(-6px) rotate(45deg);
-    width: 40%;
+  top: 36px;
+  left: 24px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 40%;
 }
 /*========= レイアウトのためのCSS ===============*/
 
 .lead {
-    margin: 20px 0 0 0;
+  margin: 20px 0 0 0;
 }
 
 .btn-block {
-    width: 200px;
-    padding: 30px;
+  width: 200px;
+  padding: 30px;
 }
