@@ -6,6 +6,11 @@
   font-family: "Noto Sans JP", sans-serif;
 }
 
+.background_top {
+background-image: url(/img/top-first-one.png);
+background-size: cover;
+}
+
 .default_color {
   color: #b49e71;
 }
